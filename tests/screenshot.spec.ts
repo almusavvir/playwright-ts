@@ -1,15 +1,15 @@
 import {expect, test} from '@playwright/test';
 
-test('Taking screenshot' , async ({page})=>{
-    await page.goto('https://www.nationalgeographic.com/');
-    await page.waitForTimeout(2000);
-    await page.screenshot({path: 'screenshot.png', fullPage: true});
-    await expect(page).toHaveTitle('National Geographic');
+test('Taking screenshot' , {tag: "@fullpage"}, async ({page})=>{
+    await page.goto('https://amazon.in');
+    await page.waitForTimeout(7000);
+    await page.screenshot({path: 'screenshots/full_page_amazon_screenshot.png', fullPage: true});
+    await expect(page).toHaveTitle('Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in');
 })
 
 
 //screenshot of just an element
-test.only('Taking element screenshot' , async ({page})=>{
+test('Taking element screenshot' , async ({page})=>{
     await page.goto('https://amazon.in/');
     await page.waitForTimeout(5000);
     await page.locator('#nav-link-accountList').screenshot({path: 'screenshots/login_button_area_screenshot.png'});
