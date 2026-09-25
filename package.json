@@ -11,5 +11,9 @@
     "@playwright/test": "^1.63.0",
     "@types/node": "^26.5.0",
     "allure-playwright": "^3.12.2"
+  },
+  "dependencies": {
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }

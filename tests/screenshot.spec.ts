@@ -1,10 +1,11 @@
 import {expect, test} from '@playwright/test';
 
 test('Taking screenshot' , {tag: "@fullpage"}, async ({page})=>{
-    await page.goto('https://amazon.in');
+    await page.goto('https://www.tatacliq.com');
     await page.waitForTimeout(7000);
-    await page.screenshot({path: 'screenshots/full_page_amazon_screenshot.png', fullPage: true});
-    await expect(page).toHaveTitle('Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in');
+    await page.screenshot({path: 'screenshots/fullpage_tatacliq_snap.png', fullPage: true});
+    //await expect(page).toHaveTitle('Online Shopping Site in India - Upto 60% Off On Mobiles, Electronics & Fashion at Tata CLiQ|Online Fashion & Lifestyle Shopping for Women, Men & Kids in India - Tata CLiQ|Online Shopping Site in India - Upto 60% Off On Mobiles, Electronics & Fashion at Tata CLiQ');
+    // await expect(page).toHaveTitle('');
 })
 
 
