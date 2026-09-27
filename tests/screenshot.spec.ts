@@ -1,7 +1,7 @@
 import {expect, test} from '@playwright/test';
 
 test('Taking screenshot' , {tag: "@fullpage"}, async ({page})=>{
-    await page.goto('https://unifiedportal-mem.epfindia.gov.in/memberinterface/');
+    await page.goto('https://voters.eci.gov.in/');
     await page.waitForTimeout(7000);
     await page.screenshot({path: 'screenshots/fullpage_tatacliq_snap.png', fullPage: true});
     //await expect(page).toHaveTitle('Online Shopping Site in India - Upto 60% Off On Mobiles, Electronics & Fashion at Tata CLiQ|Online Fashion & Lifestyle Shopping for Women, Men & Kids in India - Tata CLiQ|Online Shopping Site in India - Upto 60% Off On Mobiles, Electronics & Fashion at Tata CLiQ');
