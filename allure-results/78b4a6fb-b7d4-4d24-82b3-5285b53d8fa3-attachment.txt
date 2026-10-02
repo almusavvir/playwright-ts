@@ -1,5 +1,0 @@
-Total number of page:  2
-Title of the parent page -  Automation Testing Practice
-Title of the parent page -  SDET-QA Blog
-Title of the parent page -  Automation Testing Practice
-Title of the parent page -  SDET-QA Blog
